@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/myStyle.css">
+
+        <title>Home TGIF</title>
+    </head>
+    
+    <body class="container-fluid">
+        <header class="jumbotron">            
+            <div class="row">
+                <img src="images/Analytics.png" class="col-2 rounded-circle img-thumbnail" alt="Logo TGIF">
+                <h1 class="col-4 display-1 font-weight-bold">TGIF</h1> 
+                <a class="col-6 align-self-end text-right" href="mailto:info@tgif.net">
+                    <span class="fas fa-envelope"></span> info@tgif.net</a>
+            </div>
+        </header>
+        
+        <nav class="navbar navbar-expand-md bg-info navbar-light">
+            <a class="navbar-brand" href="#">TGIF</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsible">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a  class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="numCongress"></a>
+                    <div class="dropdown-menu">
+                        <a class="nav-link dropdown-item active" href="#senate">Senate</a>
+                        <a class="nav-link dropdown-item" href="house.html">House</a>
+                    </div>
+
+                </li>     
+              </ul>
+            </div>
+        </nav>       
+  
+
+        
+        <!--Table container-->
+        <div>
+            <h2 class="mt-4 display-4 font-weight-bold">Senators</h2>
+            <p class="p-1 m-2">First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+            
+    	    <div class="row">
+                <label class="col-auto">Filter by Party:</label>
+                <div class="col-auto custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="checkParty" id="rep" value="R" checked>
+                    <label class="custom-control-label" for="rep">Republican</label>
+                </div>
+                <div class="col-auto custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="checkParty" id="dem" value="D" checked>
+                    <label class="custom-control-label" for="dem">Democrat</label>
+                </div>
+                <div class="col-auto custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" name="checkParty" id="ind" value="I" checked>
+                    <label class="custom-control-label" for="ind">Independent</label>
+                
+                </div>
+                <div class="col-auto">
+                    <select class="custom-select mb-4" name="stateDrop">
+
+                    </select>           
+                </div>
+            </div>     
+            
+            
+            
+            
+            <div class="table-responsive-md">
+                <table class="table table-fixed table-hover text-center" id="senate-data">
+                    <thead class="table-info" id="tableHeaders">
+                        <tr>
+                            <th>Name</th>
+                            <th class="party">Party</th>
+                            <th class="state">State</th>
+                            <th>Years in Office</th>
+                            <th>% votes w/ Party</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableRows">
+
+                    </tbody>
+                </table>
+            </div>
+    	</div>
+        <footer class="bg-info text-dark text-center small font-weight-bold">
+            <p>https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment</p>
+            <p> &#169; 2016 TGIF| All Rights</p>
+        </footer>
+        
+        
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+        <script src="pro-congress-113-senate.js"></script>
+        <script src="raw.js"></script>
+</body>
+</html>

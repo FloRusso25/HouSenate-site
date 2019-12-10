@@ -1,0 +1,23 @@
+body{
+    font-family: cursive;
+}
+
+p{
+   text-indent:2em; 
+}
+
+.table-responsive-md{
+    position:relative;
+    display:block;
+    overflow-y:scroll;
+    height:50vh;
+}
+
+thead{
+    position:sticky;
+}
+
+
+
+
+
